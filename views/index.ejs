@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Empire</title>
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/scripts/script.js"></script>
+</head>
+<body>
+    <main>
+        <form id="login_form">
+            <label for="name">Please enter your name:</label>
+            <input type="text" id="name" name="name">
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <section id="playroom">
+            <div id="containers">
+                <h1>Build Your Empire!</h1>
+                <button id="brick"></button>
+                <button id="grass"></button>
+                <button id="grovel"></button>
+                <button id="clear">Clear</button>
+                <div id="bricks_container"></div>
+            </div>
+            <aside>
+                <h2>Players</h2>
+                <div id="joiners"></div>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>
